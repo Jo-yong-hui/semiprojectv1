@@ -1,251 +1,187 @@
 <!doctype html>
-  <html lang = "ko">
-<head>
-<meta charset = "UTF-8">
-	<title>community</title>
-    <meta name = "viewpoint" content="width=device-width,
-                                      initial-scale=1">
-    <link rel = "stylesheet" href="">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel = "stylesheet" href="/css/myreset.css">
-    <link rel="stylesheet" href="/css/layout3.css">
-      </head>
-      <body>
-      </body>
-</html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>community</title>
+        <meta name="viewport" content="width=deivce-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/myreset.css">
+        <link rel="stylesheet" href="/css/layout3.css">
+    <style>
 
-<style>
-    a{ font-weight: bold}
-        a:link { text-decoration: none; color: black}
-        a:visited {text-decoration: none; color: black}
-        a:active {text-decoration: underline; color: orange}
-        a:hover {text-decoration: underline; color: orange}
-     body{ margin:0; padding:0 }
-    ul {list-style :none; padding: 0 } /* 점 없애기 */
-
-
-    #wrap { width:1000px; margin: 0 auto;}
-
-    nav ul { list-style-type:none; padding-bottom: 30px;}
-    nav ul li{ float:left; margin-left: 50px;}
-    nav hr {clear:both;}
-
-    /*nav 스타일 */
-nav { height: 40px; clear: both;
-      padding-left: 50px; padding-top: 5px;
-      background: #dcdcdc; text-align: center;}
-
-nav input { border: 5px solid green;
-            padding:5px; width:325px}
-
-nav select {padding:5px; width: 150px;
-    text-decoration: underline; font-size: 1px; }
-nav button { border: 5px solid green;
-    padding: 7px; width: 90px;
-            background: white; color: blue;
-            font-size: 14px; }
-
- /* 로그인 스타일 */
-   #loginfrm { width: 300px;
-				margin : 20px auto;}
-   #loginfrm label{ display:inline-block; width: 100px;
-				text-align: right; font-weight: bold;}
-
-    #loginfrm div{ margin-bottom: 10px;} /* 버튼미는방식*/
-     input, button {padding: 5px}
-			button { margin-right: 55px; width: 75px; }
-
- /*main-banner*/
-#banner{ border:4px solid black; width:800px; float: left;
-    height: 275px; margin: 10px 25px 20px 0;}
-
-#banner h3 { margin-top: 11px;
-        text-align:start;}
-
-#banner ul { margin-top: 75px; margin-left: 600px; }
-#banner li { float: left; padding: 8px 12px;
-            background: #dcdcdc; margin-right: 10px;
-            font-weight: bold; font-size: 18px }
-
-/*main-aside*/
-        aside { /*border:1px solid red; */ width:305px; float: left}
-        aside ul {margin: 10px 10px 20px 20px;
-                  border: 4px solid black;}
-        aside li { padding: 7px 14px; font-weight: bold;
-                  font-size: 18px;}
-        aside li :last-child { border: none;}
-
-/*main-prodlist*/
-        section:nth-child(2) { clear:both; } /* todat special 밑으로 내리기 */
-        #prodlist h2 { margin-left: 25px;}
-        #prodlist ul { height: 2000px;
-            margin: 100px 50 100px 65px;}
-        #prodlist li { float:left; margin-right: 55px;  }
-        #prodlist div { width: 100px; height: 120px;
-                    background: #dcdcdc; border-radius: 10px}
-        #prodlist p { text-align: center;}
-
-
-
-
-</style>
-  </head>
-   <body>
- <div id ="wrap"> <!-- 전체를 묵는 div -->
-<header>
- <ul>
-    <li>회원정보</li>
-    <li>로그인</li>
-    <li>회원가입</li>
-</ul>
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+        <h1>로고</h1>
+        <ul class="qmenu">
+            <li>회원정보</li>
+            <li>로그인</li>
+            <li>회원가입</li>
+        </ul>
+        <div class="search">
+            <input type="text">
+            <button type="button">검색</button>
+        </div>
+<nav>
+    <ul>
+        <li>프로젝트개요</li>
+        <li>공지사항</li>
+        <li>게시판</li>
+        <li>자료실</li>
+        <li>갤러리</li>
+        <li>커뮤니티</li>
+        <li>쇼핑몰</li>
+        <li>관리자</li>
+    </ul>
+</nav>
 </header>
 
-<nav>
-    <input type = "text">
-    <button type ="button">검색</button>
-</nav>
-
-    <hr>
- <nav>
-    <ul>
-    <li><a href = "#">프로젝트개요</a></li>
-    <li><a href = "#">공지사항</a></li>
-    <li><a href = "#">게시판</a></li>
-    <li><a href = "board/list.html">자료실</a></li>
-    <li><a href = "#">갤러리</a></li>
-    <li><a href = "#">커뮤니티</a></li>
-    <li><a href = "#">쇼핑몰</a></li>
-    <li><a href = "#">관리자</a></li>
+<div id="main">
+<aside>
+<div id="login">
+    <ul class="lgmenu">
+        <li>회원가입</li>
+        <li>아이디찾기</li>
+        <li>비밀번호찾기</li>
     </ul>
-        <hr>
-</nav>
-
-      <div id = "main">
-    <section>
-    <aside><!-- 왼쪽메뉴 -->
-    <tr><td>회원가입</td></tr>
-    <tr><td>아이디찾기</td></tr>
-    <tr><td>비밀번호찾기</td></tr>
     <hr>
-        <tr><td>보안접속 ON | </td></tr>
-        <div>자동로그인
-    <input type = "checkbox" name = "autologin" value="autologin";>
-    </div>
-
-    <form name ="loginfrm" id = "loginfrm" method = "post">
-     <!--fomr을 해줘야 입력칸표가 가운데로 감 -->
-
-
-    <input type = "text" name ="userid" size ="12"><br>
-    <input type = "text" name ="userid" size ="12">
-    <button type = "button">로그인</button>
-
-
-  <ul>
-   <li><h3>공지사항</h3></li>
-   <li>아이유 사진은 업로드 금지!</li>
-   <li>수지 사진은 업로드 환영!</li>
-   <li>아이유 사진은 업로드 금지!</li>
-   <li>수지 사진은 업로드 환영!</li>
-   <li>아이유 사진은 업로드 금지!</li><br>
-
-<li>아이유 광고는 금지!</li>
-  </ul>
-
-<div id = "banner"><!--오른쪽 배너 -->
-<h3>Hello,World!!</h3>
-    <li>Bootstrap UI Framework, Spring Framework, Spring MVC, Spring</li>
-    <li>Web Flow, Hibernate, EL,JSTL,JSPX, Apache Tiles 등을 이용해서 제작한 프로젝트 사이트입니다. </li>
-    <li>Servlet 3.x, MyBatis 3.x, Struts 2.x, Sitemesh 3.x등을 이용해서 프로젝트를 완성해 보세요.</li>
-    <li>Subversion, Git, Ant, Maven, Mylyn, TRAC등을 이용해서 프로젝트를 관리, 배포하고, 버그 추적도 해보세요</li>
+    <ul class="atlogin">
+        <li>보안접속 ON</li>
+        <li><input type="checkbox">자동로그인</li>
+    </ul>
+    <ul class ="loginfrm">
+        <li><input type="text"
+                   placeholder="아이디"></li>
+        <li><input type="password"
+                   placeholder="비밀번호"></li>
+        <li><button type="button">
+                   로그인</button></li>
+    </ul>
 </div>
 
-<div id = "main">
-<h3>최신정보</h3>
-    <tr><td>[SKT/변이]<갤럭시S3-할원:0원></td><br>
-    <td>[KT 변이/기변]갤그랜드[0]</td><br>
-    <tr><td>[SKT/변이]<갤럭시S3-할원:0원></td><br>
-    <td>[KT 변이/기변]갤그랜드[0]</td><br>
-    <tr><td>[SKT/변이]<갤럭시S3-할원:0원></td><br>
-    <td>[KT 변이/기변]갤그랜드[0]</td><br>
-    <tr><td>[SKT/변이]<갤럭시S3-할원:0원></td><br>
-    <td>[KT 변이/기변]갤그랜드[0]</td><br>
-    <tr><td>[SKT/변이]<갤럭시S3-할원:0원></td>
-
-<div id = "banner"><!--오른쪽 배너 -->
-  <h3>사용기/설치기</h3>
-    <tr><td>엑스맨 감상기[노스포]</td><br>
-    <td>[Her]감상기-개인평점 9/10</td><br>
-    <td>아이패드 미니 1 간단한 사용기</td></tr><br>
-    <tr><td>엑스맨 감상기[노스포]</td><br>
-    <td>[Her]감상기-개인평점 9/10</td><br>
-    <td>아이패드 미니 1 간단한 사용기</td></tr><br>
-    <tr><td>엑스맨 감상기[노스포]</td><br>
-    <td>[Her]감상기-개인평점 9/10</td><br>
-    <td>아이패드 미니 1 간단한 사용기</td></tr><br>
+<div id="notice">
+    <h3>공지사항</h3>
+    <ul>
+        <li>수지사진은 업로드 환영!</li>
+        <li>아이유사진은 업로드 금지!</li>
+        <li>수지사진은 업로드 환영!</li>
+        <li>아이유사진은 업로드 금지!</li>
+        <li>수지사진은 업로드 환영!</li>
+        <li>아이유사진은 업로드 금지!</li>
+    </ul>
 </div>
 
-       <section>
+<div class="ad">
+    (광고) 아이러브 민초!
+</div>
+</aside>
 
-  <div id = "prodlist">
-<h2>이미지갤러리</h2>
-<ul>
-<li><div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li><div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li><div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li><div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-    <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-   <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-    <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-    <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-    <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-
-<li>
-    <div></div> <!-- 그림 div로-->
-    <p><a href ="#">수지 환영</a></p>
-</li>
-      </ul>
-  </div>
+<div id="content">
+<section id="welcome">
+    <h1>Hello, World!!</h1>
+    <p>Aliquam erat volutpat. Vestibulum et odio sit amet dolor auctor ultricies ut nec nunc. Aenean sit amet diam quam. Vestibulum at dictum tortor, et hendrerit quam. Vestibulum vestibulum neque velit, eu scelerisque ipsum consequat id. Cras congue nibh a facilisis tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis in tellus ut eleifend. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eu dui non diam varius dictum a at quam. Cras vitae sodales orci. Praesent tellus dui, tincidunt rhoncus vulputate nec, ornare nec odio.</p>
 </section>
 
+<section id="board">
+    <ul id="newinfo">
+        <li><h3>최신정보</h3></li>
+        <li>[SKT/번이]&lt;아이폰 12프로 할원0원&gt;</li>
+        <li>[KT번이/기변]아이폰 12 미니 차비 10만원 </li>
+        <li>[SKT/번이]&lt;아이폰 12프로 할원0원&gt;</li>
+        <li>[KT번이/기변]아이폰 12 미니 차비 10만원 </li>
+        <li>[SKT/번이]&lt;아이폰 12프로 할원0원&gt;</li>
+        <li>[KT번이/기변]아이폰 12 미니 차비 10만원 </li>
+        <li>[SKT/번이]&lt;아이폰 12프로 할원0원&gt;</li>
+        <li>[KT번이/기변]아이폰 12 미니 차비 10만원 </li>
+        <li>[SKT/번이]&lt;아이폰 12프로 할원0원&gt;</li>
+        <li>[KT번이/기변]아이폰 12 미니 차비 10만원 </li>
+    </ul>
+    <ul id="used">
+        <li><h3>사용기</h3></li>
+        <li>아이폰 12프로 대박~!</li>
+        <li>M1 맥프로 사용기 : 개인평점 10점</li>
+        <li>아이폰 12프로 대박~!</li>
+        <li>M1 맥프로 사용기 : 개인평점 10점</li>
+        <li>아이폰 12프로 대박~!</li>
+        <li>M1 맥프로 사용기 : 개인평점 10점</li>
+        <li>아이폰 12프로 대박~!</li>
+        <li>M1 맥프로 사용기 : 개인평점 10점</li>
+        <li>아이폰 12프로 대박~!</li>
+        <li>M1 맥프로 사용기 : 개인평점 10점</li>
+    </ul>
+</section>
 
-  <footer>
-    <hr>
-    <p>Copyright &copy; 2014.siestageek. All Rights Reserved. Designed by HTML5.CSS3</p>
-    <p>1 Infinite Loop, Cupertino, CA 95014. 개인정보 관리책임자 : 스티브잡스 steve@apple.com</p>
+<section id="gallery">
+    <h3>이미지 갤러리</h3>
+    <ul>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
+        <li>
+            <div></div>
+            <p>수지환영</p>
+        </li>
 
+
+    </ul>
+
+</section>
+</div>
+</div>
+
+    <footer>
+    <ul class="nav">
+        <li>이용약관</li>
+        <li>개인정보방침</li>
+        <li>이메일부단수집거부</li>
+        <li>고객지원</li>
+        <li>권리침해신고</li>
+        <li>광고문의</li>
+    </ul>
+     <div></div>
+     <p>Copyright &copy; 2021. zzyzzy. All rights Reserved.
+       Designed by HTML5,CSS3<br>
+       1 Infinite Loop, cupertino, CA 95014.
+       개인정보 관리책임자 : 스티브 잡스 steve@apple.com</p>
     </footer>
+        </div>
+    </body>
+</html>
 
 
 
